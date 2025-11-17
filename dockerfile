@@ -5,7 +5,7 @@ COPY server/*.json ./
 RUN npm install
 COPY ./server .
 RUN npm run build
-RUN mkdir uploads 
+RUN mkdir -p uploads 
 
 # Stage 2 - build client
 FROM node:20-alpine AS builder-client
