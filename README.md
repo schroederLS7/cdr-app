@@ -25,6 +25,9 @@ Run from inside `server` subdir
 * `dev` - run dev server (with nodemon)
 * `debug` - run dev server (with nodemon) and debugging support
 
+### Note: For running in dev mode
+* create an `uploads` directory in the root of the server application to give a location for local file storage when uploading files
+
 ## Run full stack application - using Docker containers
 From root-dir of cloned repo: 
 `docker-compose -f docker-compose.yaml up --build`
