@@ -59,6 +59,7 @@ app.post('/api/upload', upload.single('uploadedFile'), (request, response) => {
         parseResults.forEach(element => {
             if (element.status == Status.Error) {
                 apiResponse = element;
+                response.send(apiResponse);
             }
         });
 
